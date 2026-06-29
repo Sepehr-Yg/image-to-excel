@@ -42,9 +42,9 @@ pip install pillow openpyxl
 ```python
 from image_to_excel import image_to_excel
 
-image_to_excel("photo.jpg")                          # default block size 10
-image_to_excel("photo.jpg", "mosaic.xlsx", 5)        # smaller blocks = more detail
-image_to_excel("photo.jpg", "mosaic.xlsx", 20)       # larger blocks = more abstract
+image_to_excel("photo.jpg")
+image_to_excel("photo.jpg", "mosaic.xlsx", 5)
+image_to_excel("photo.jpg", "mosaic.xlsx", 20)
 ```
 
 ### Parameters
@@ -68,9 +68,13 @@ image_to_excel("photo.jpg", "mosaic.xlsx", 20)       # larger blocks = more abst
 ```
 image-to-excel/
 │
-├── image_to_excel.py   # Main script
+├── image_to_excel.py
 ├── README.md
-└── examples/           # Sample input images and outputs (optional)
+├── images/
+│     ├── input.jpg
+│     └── output.png
+│
+└── examples/
 ```
 
 ---
